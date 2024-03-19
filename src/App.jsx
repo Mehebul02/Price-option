@@ -13,7 +13,7 @@ function App() {
       
       {/* <h1 className='text-center'>Price Opation</h1> */}
     <Navber></Navber>
-    <Daisyui></Daisyui>
+    {/* <Daisyui></Daisyui> */}
       
     </>
   )

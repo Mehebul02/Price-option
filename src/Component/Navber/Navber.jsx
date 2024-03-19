@@ -10,19 +10,18 @@ const Navber =()=>{
         { id: 4, name: "Contact", path: "/contact" },
         { id: 5, name: "Blog", path: "/blog" }
       ];
-      const [open,setOpen] =useState(false)
+      const [open,setOpen] =useState()
       
     return(
-<nav>
-    <div className="md:hidden" onClick={()=>setOpen(!open)}>
+<nav className="p-6">
+    <div className="md:hidden " onClick={()=>setOpen(!open)}>
+       
         {
-            open===true?
-            <IoClose></IoClose>
-            :<IoMenu className="text-2xl "></IoMenu>
+            open === true ?  <IoClose className="text-2xl"></IoClose> :  <IoMenu className="text-2xl "></IoMenu>
         }
-    
+   
     </div>
-   <ul className="md:flex ">
+   <ul className={`md:flex absolute ${open?'top-16':'-top-60'} duration-1000 bg-orange-800 text-black p-6 rounded-md`}>
    {
         routes.map(route => <Link key={route.id} route={route}></Link>)
     }
