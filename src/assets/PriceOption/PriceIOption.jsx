@@ -1,3 +1,5 @@
+
+import { FaRegCheckCircle } from "react-icons/fa";
 const PriceOption =({option})=>{
     const {name,price,features}=option
 
@@ -9,7 +11,8 @@ const PriceOption =({option})=>{
     </h1>
     <h4 className="text-3xl text-center my-4">{name}</h4>
     {
-        features.map(feature =><li>{feature}</li>)
+        features.map(feature =><span className="flex items-center ">
+            <FaRegCheckCircle className="text-yellow-900 mr-4"></FaRegCheckCircle> {feature}</span>)
     }
 
 </div>
