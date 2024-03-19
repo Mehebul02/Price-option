@@ -1,3 +1,7 @@
+import { useState } from "react";
+import Link from "../Link/Link";
+import { IoMenu,IoClose  } from "react-icons/io5";
+
 const Navber =()=>{
     const routes = [
         { id: 1, name: "Home", path: "/Home" },
@@ -6,12 +10,21 @@ const Navber =()=>{
         { id: 4, name: "Contact", path: "/contact" },
         { id: 5, name: "Blog", path: "/blog" }
       ];
+      const [open,setOpen] =useState(false)
       
     return(
 <nav>
-   <ul className="flex text-center">
+    <div className="md:hidden" onClick={()=>setOpen(!open)}>
+        {
+            open===true?
+            <IoClose></IoClose>
+            :<IoMenu className="text-2xl "></IoMenu>
+        }
+    
+    </div>
+   <ul className="md:flex ">
    {
-        routes.map(route => <li className="mr-10"><a href={route.path}>{route.name}</a></li>)
+        routes.map(route => <Link key={route.id} route={route}></Link>)
     }
    </ul>
 </nav>

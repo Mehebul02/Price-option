@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       
-      <h1 className='text-center'>Price Opation</h1>
-    <Daisyui></Daisyui>
+      {/* <h1 className='text-center'>Price Opation</h1> */}
     <Navber></Navber>
+    <Daisyui></Daisyui>
       
     </>
   )
