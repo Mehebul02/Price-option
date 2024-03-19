@@ -12,7 +12,7 @@ const PriceOption =({option})=>{
     <h4 className="text-3xl text-center my-4">{name}</h4>
    <div className="pl-15 flex-grow">
    {
-        features.map(feature =><span className="flex items-center ">
+        features.map((feature,idx) =><span key={idx} className="flex items-center ">
             <FaRegCheckCircle className="text-yellow-900 mr-4"></FaRegCheckCircle> {feature}</span>)
     }
    </div>

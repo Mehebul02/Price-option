@@ -5,6 +5,8 @@ import './App.css'
 import Daisyui from './Component/Daisy'
 import Navber from './Component/Navber/Navber'
 import PriceOptions from './Component/PriceOptions/PriceOptions'
+import LineChart from './LineChart/LineChart'
+import Phones from './Phones/Phones'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
     <Navber></Navber>
     {/* <Daisyui></Daisyui> */}
     <PriceOptions></PriceOptions>
+    <LineChart></LineChart>
+    <Phones></Phones>
       
     </>
   )
