@@ -10,7 +10,10 @@ const PriceOptions =()=>{
           "features": [
             "Access to cardio machines",
             "Access to weightlifting area",
-            "Locker room access"
+            "Locker room access",
+            "Locker2 room access",
+            "Locker22 room access",
+           
           ]
         },
         {
@@ -66,9 +69,9 @@ const PriceOptions =()=>{
       ]
       
     return(
-        <div>
+        <div >
             <h1 className="text-7xl text-center">Best Price in town</h1>
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10 p-4">
+           <div className="grid grid-cols-1 md:grid-cols-3  gap-7 mt-10 p-4">
            {
                 priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
             }
