@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Daisyui from './Component/Daisy'
 import Navber from './Component/Navber/Navber'
+import PriceOptions from './Component/PriceOptions/PriceOptions'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       {/* <h1 className='text-center'>Price Opation</h1> */}
     <Navber></Navber>
     {/* <Daisyui></Daisyui> */}
+    <PriceOptions></PriceOptions>
       
     </>
   )

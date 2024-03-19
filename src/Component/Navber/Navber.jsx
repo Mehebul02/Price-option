@@ -21,7 +21,7 @@ const Navber =()=>{
         }
    
     </div>
-   <ul className={`md:flex absolute ${open?'top-16':'-top-60'} duration-1000 bg-orange-800 text-black p-6 rounded-md`}>
+   <ul className={`md:flex absolute md:static ${open?'top-16':'-top-60'} duration-1000 bg-orange-800 text-black p-6 rounded-md`}>
    {
         routes.map(route => <Link key={route.id} route={route}></Link>)
     }
